@@ -25,14 +25,17 @@ import '@fortawesome/fontawesome-free/js/all.js';
 //import jquery from 'jquery'
 window.$ = window.jQuery  = require('jquery')
 
-/*Axios*/
+/*
+github auth plugin
+https://github.com/dgrubelic/vue-authenticate
+*/
 import VueAuthenticate from 'vue-authenticate';
 Vue.use(VueAuthenticate, {
   baseUrl: 'http://localhost:8080', // Your API domain
   
   providers: {
     github: {
-      clientId: 'Iv1.0db3470d75593452',
+      clientId: '72e81c274317139cdc6c',
       redirectUri: 'http://localhost:8080' // Your client app URL
     }
   }
